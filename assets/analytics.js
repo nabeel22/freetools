@@ -1,6 +1,6 @@
 /* Basic consent mode: the Google library is not requested before consent. */
 (() => {
-  const ID = 'G-FT8S61MPLX';
+  const ID = 'G-G3XZ6J19TW';
   const KEY = 'freetools-analytics-consent-v1';
   const MAX_AGE = 180 * 24 * 60 * 60 * 1000;
   const production = location.hostname === 'www.freetools.kianimotions.com';
@@ -48,7 +48,7 @@
       // Reload unloads the library and its listeners after withdrawal.
       for (const part of document.cookie.split(';')) {
         const name = part.trim().split('=')[0];
-        if (name === '_ga' || name === '_ga_FT8S61MPLX') {
+        if (name === '_ga' || name === '_ga_G3XZ6J19TW') {
           document.cookie = `${name}=; Max-Age=0; Path=/`;
           document.cookie = `${name}=; Max-Age=0; Path=/; Domain=${location.hostname}`;
         }
